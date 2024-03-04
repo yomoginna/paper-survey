@@ -1,1 +1,10 @@
+## info
+@misc{hartman2023method,
+      title={A Method to Automate the Discharge Summary Hospital Course for Neurology Patients}, 
+      author={Vince C. Hartman and Sanika S. Bapat and Mark G. Weiner and Babak B. Navi and Evan T. Sholle and Thomas R. Campion, Jr au2},
+      year={2023},
+      eprint={2305.06416},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 
