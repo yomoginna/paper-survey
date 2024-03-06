@@ -8,3 +8,25 @@
       primaryClass={cs.CL}
 }
 
+
+## abstract
+- 行ったこと：EHRsから退院サマリを自動生成する手法の提案
+- 手法：the hospital course sectionを要約する，encoder-decoder sequance-to-sequence transformer modelによる手法を開発・評価した．
+      - BERT と BART models をfinetuneし，制約beam searchを通じて事実性を最適化した．
+- データ：神経科unitに入院した患者のEHR dataを使って学習・テストした
+- 結果：
+      - ROUGE scoreは，R-2が13.76
+      - ブラインド評価では，2人の認定医師により，自動評価の62%が標準治療を満たしている(どういう意味?)と評価した．
+
+
+## background
+
+## problem ("However, ...")
+
+## done
+
+## not done
+
+## experiment & settings
+
+## comment
