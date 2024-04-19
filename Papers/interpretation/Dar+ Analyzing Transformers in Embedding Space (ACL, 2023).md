@@ -6,9 +6,15 @@
 
 # 概要
 - 行列計算により、GPT系列（BERTも可）の各層を解釈する手法の提案
+	- 各parameter行列が表すtokenまたはtoken同士の関係を解釈できるようになる
 - GPT family にのみ適用可能。
 	- GPTの最後のLM head（埋め込み行列E）を利用するため。
 
+# 前提
+- transformerを積み重ねたLLMにおいて、
+	- 残差streamが大きな川のようなもの
+	- この大きな川に対し、Attention層やFFで作られた情報を少しずつ足していくイメージ。
+-  
 
 # 計算方法
 <img width="640" alt="image" src="https://github.com/yomoginna/paper-survey/assets/98722875/74dbe1cb-e881-4817-a1dd-00c8d0ddde36">
@@ -28,5 +34,6 @@
 		- 埋め込み行列: $E \in R^{e \times d}$
 		- $E$ の右逆行列 $E'$は、 $E' \in R^{d \times e}$
 
+<img width="702" alt="image" src="https://github.com/yomoginna/paper-survey/assets/98722875/83240d48-537e-459e-bf8a-5f1539c8df52">
 
 
