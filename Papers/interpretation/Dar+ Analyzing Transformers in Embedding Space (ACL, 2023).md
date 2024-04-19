@@ -6,12 +6,11 @@
 
 # 概要
 - 行列計算により、GPT系列（BERTも可）の各層を解釈する手法の提案
-- 擬似逆行列を用いて計算する
-- FFの両2層、Attentionの各subhead、
+- GPT family にのみ適用可能。
+	- GPTの最後のLM head（埋め込み行列E）を利用するため。
 
 
-
-
+# 計算方法
 <img width="640" alt="image" src="https://github.com/yomoginna/paper-survey/assets/98722875/74dbe1cb-e881-4817-a1dd-00c8d0ddde36">
 
 - Symbol: 解釈したい行列
